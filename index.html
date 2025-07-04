@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:title"
+      content="Bodas de Estanho Digital - 10 Anos de Amor Codificado"
+    />
+    <meta
+      property="og:description"
+      content="Homenagem em código e poesia. Uma década de amor, commits e releases!"
+    />
+    <meta
+      property="og:image"
+      content="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove_photo.jpg"
+    />
+    <meta property="og:url" content="https://codeoflove.chavatte.online/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Bodas de Estanho Digital - 10 Anos de Amor Codificado"
+    />
+    <meta
+      name="twitter:description"
+      content="Homenagem em código e poesia. Uma década de amor, commits e releases!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove_photo.jpg"
+    />
+    <title>Bodas de Estanho Digital</title>
+    <link
+      rel="icon"
+      href="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove.ico"
+    />
+    <link
+      rel="preload"
+      href="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove_photo.jpg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove_audio.mp3"
+      as="audio"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <audio
+        id="backgroundMusic"
+        src="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove_audio.mp3"
+        loop
+      ></audio>
+      <h1>Bodas de Estanho Digital</h1>
+      <figure>
+        <img
+          id="mainPhoto"
+          class="responsive-image"
+          src="https://pub-2ec9f1f75e8149f8bf0fda049fe65aee.r2.dev/dev/codeoflove_photo.jpg"
+          alt="Nossa primeira foto juntos"
+        />
+        <figcaption>Nossa primeira foto juntos</figcaption>
+      </figure>
+      <section class="poetry" aria-labelledby="poetry-heading">
+        <h2 id="poetry-heading" class="sr-only">Nosso Amor Codificado</h2>
+        <p>Uma década se passou, Mariana,</p>
+        <p>Nosso código de amor, que trama!</p>
+        <p>
+          Dez anos de um "<span id="easterEggCommit" class="interactive-word"
+            >commit</span
+          >" especial,
+        </p>
+        <p>Nosso laço, um sistema genial.</p>
+        <br />
+        <p>Começamos com um "Hello, World!" singelo,</p>
+        <p>Duas linhas de paixão, um belo elo.</p>
+        <p>A cada dia, um novo "push" no coração,</p>
+        <p>Construindo nossa feliz aplicação.</p>
+        <br />
+        <p>Houve "bugs", sim, e alguns "timeouts",</p>
+        <p>Mas juntos sempre demos "workarounds" e "shouts"</p>
+        <p>De alegria, com "updates" e "features" no ar,</p>
+        <p>Nosso amor, um software a brilhar.</p>
+        <br />
+        <p>Você é o "framework" que me sustenta,</p>
+        <p>A "biblioteca" que me complementa.</p>
+        <p>Com você, não há "loop" infinito de tédio,</p>
+        <p>Só otimização e todo bom remédio.</p>
+        <br />
+        <p>Nosso "deploy" foi perfeito, sem falhas,</p>
+        <p>E a cada ano, superamos batalhas.</p>
+        <p>Que venham mais "releases", mais "upgrades" nessa vida,</p>
+        <p>Com você, Mariana, minha mais linda querida.</p>
+        <br />
+        <p>Então, brindo a esses dez anos de código e afeto,</p>
+        <p>Nosso amor é "open source", sem nenhum segredo.</p>
+        <p>Que nosso "server" de alegria nunca caia,</p>
+        <p>Parabéns pelo nosso casamento, minha Mariana!</p>
+        <button id="revealButton" class="btn-reveal" onclick="tribute()">
+          Revelar Nosso Código de Amor!
+        </button>
+        <div
+          class="audio-controls"
+          role="group"
+          aria-label="Controles de Áudio"
+        >
+          <div class="track-info">
+            <span class="material-icons music-note-icon" aria-hidden="true"
+              >music_note</span
+            >
+            <div class="marquee-container">
+              <span class="music-title"
+                >Pearl Jam - Elderly Woman Behind The Counter In A Small
+                Town</span
+              >
+            </div>
+          </div>
+          <div class="player-controls">
+            <button
+              id="playPauseButton"
+              class="audio-btn"
+              aria-label="Reproduzir ou Pausar Música de Fundo"
+            >
+              <span class="material-icons" aria-hidden="true">play_arrow</span>
+              Play/Pause
+            </button>
+            <input
+              type="range"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.05"
+              value="0.5"
+              class="volume-slider"
+              aria-label="Volume da Música"
+              aria-valuemin="0"
+              aria-valuemax="1"
+              aria-valuenow="0.5"
+            />
+            <span class="material-icons volume-icon" aria-hidden="true"
+              >volume_up</span
+            >
+          </div>
+        </div>
+        <pre id="output" aria-live="polite">Aguardando Deploy...</pre>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
